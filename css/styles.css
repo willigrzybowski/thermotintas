@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    color: #222;
+}
+
+h2,
+h3,
+p,
+a {
+    font-family: "Prompt", Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav img {
+    width: 110px;
+    height: 110px;
+}
+
+/* SEÇÕES */
+
+.article {
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 48pt;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.figures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SUBARTIGO */
+
+.subarticle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.subarticle div {
+    width: 50%;
+}
+
+.subarticle div h3 {
+    font-size: 26pt;
+    max-width: 470px;
+}
+
+.subarticle div p {
+    font-size: 24px;
+    max-width: 400px;
+}
+
+.subarticle img {
+    width: 350px;
+    height: auto;
+}
+
+/* ESPECIFICAÇÕES */
+
+.especificacao {
+    width: 100%;
+    background-color: #EF9F27;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.card {
+    width: 30%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card .icone {
+    width: 18px;
+    height: 18px;
+}
+
+.card a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1024px) {
+
+    .title {
+        font-size: 36pt;
+    }
+
+    .subtitle {
+        font-size: 22pt;
+    }
+
+    .subarticle {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .subarticle div {
+        width: 100%;
+    }
+
+    .subarticle div h3,
+    .subarticle div p {
+        max-width: 100%;
+    }
+
+    .subarticle img {
+        width: 300px;
+    }
+
+    .especificacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .figures img {
+        height: 100px !important;
+    }
+}
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        height: 90px;
+    }
+
+    header nav img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .article {
+        padding-top: 90px;
+    }
+
+    .title {
+        font-size: 28pt;
+    }
+
+    .subtitle {
+        font-size: 16pt;
+        padding: 0 15px;
+    }
+
+
+    .figures img {
+        height: 70px !important;
+        width: auto;
+    }
+
+    .subarticle {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .subarticle div {
+        width: 100%;
+    }
+
+    .subarticle div h3 {
+        font-size: 22pt;
+        max-width: 100%;
+    }
+
+    .subarticle div p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .subarticle img {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .especificacao {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .title {
+        font-size: 22pt;
+    }
+
+    .subtitle {
+        font-size: 14pt;
+    }
+
+    .subarticle div h3 {
+        font-size: 18pt;
+    }
+
+    .subarticle div p {
+        font-size: 16px;
+    }
+
+    .figures img {
+        height: 50px !important;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
